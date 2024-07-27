@@ -1,0 +1,30 @@
+package br.com.claro.TestesClaro;
+
+import java.util.Scanner;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestesClaroApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestesClaroApplication.class, args);
+		
+		Scanner scanner = new  Scanner(System.in);
+		
+		
+		System.out.println("por favor digite seu nome");
+		String nome = scanner.next();
+		System.out.println("por favor digite o numero da conta");
+		String numero = scanner.next();
+		System.out.println("digite sua conta");
+		String conta = scanner.nextLine();
+		System.out.println("digite seu sado");
+		Double saldo = scanner.nextDouble();
+		
+		System.out.println("Olá ,"+ nome + " obrigado por criar uma conta em nosso banco, sua agência é "+ numero + ", conta " + conta + "e seu saldo " + saldo + " já está disponível para saque");
+		
+		scanner.close();
+	}
+	
